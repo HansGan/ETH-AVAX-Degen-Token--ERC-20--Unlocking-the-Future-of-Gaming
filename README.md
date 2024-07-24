@@ -10,7 +10,7 @@ Your task is to create a ERC20 token and deploy it on the Avalanche network for 
 
 ## Description
 
-**Similarly to a another project of mine on 
+Similarly to another project of mine on TYPES OF FUNCTIONS - ETH AVAX PROJECT (https://github.com/HansGan/ETH-AVAX-Types-of-Functions-Project) it is focused on creating an ERC20 token by extending the contract to ERC20. The token is named as Degen Token or DGN for short. The program consists of 
 
 ## Getting Started
 
@@ -25,13 +25,6 @@ Your task is to create a ERC20 token and deploy it on the Avalanche network for 
 * Step-by-step bullets
 ```
 code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
 ```
 
 ## Authors
