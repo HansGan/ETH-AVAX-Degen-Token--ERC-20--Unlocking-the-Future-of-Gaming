@@ -10,7 +10,7 @@ Your task is to create a ERC20 token and deploy it on the Avalanche network for 
 
 ## Description
 
-Similarly to a another project of mine on 
+**Similarly to a another project of mine on 
 
 ## Getting Started
 
