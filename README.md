@@ -59,27 +59,19 @@ Overall, the program was specifically made to demonstrate how users can get, tra
 
 ## Getting Started
 
-### Installing
+Simply run the code in REMIX IDE. To test the code make sure to compile then deploy the smart contract. Moreover, carefully read each function (refer to the description for details), there are a total of 6 main functions.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+In other words, here are the steps:
+1. Open Remix IDE at https://remix.ethereum.org/
+2. Clone the this repository
+5. Open the solidity compiler and compile your code
+7. Open the deploy tab to choose Injectedd Provider - MetaMask
+8. Deploy Contract
+10. Perform your desired transactions using the defined functions
+11. Check Snowtrace to validate transactions were successful
 
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+NOTE:
+Make sure your metamask is set-up and is connected to fuji network and to also be signed up to the snowtrace using your metamask walley credentials.
 
 ## Authors
-
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+Hans Matthew N. Gan (hansmatthewniervagan@gmail.com)
