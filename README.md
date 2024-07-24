@@ -12,11 +12,50 @@ Your task is to create a ERC20 token and deploy it on the Avalanche network for 
 
 Similarly to another project of mine on TYPES OF FUNCTIONS - ETH AVAX PROJECT (https://github.com/HansGan/ETH-AVAX-Types-of-Functions-Project) it is focused on creating an ERC20 token by extending the contract to ERC20. The token is named as Degen Token or DGN for short. The program consists of 6 main functions:
 
+The following function allows the transfer of balance to the account being used.
 ```
 function mint(address to, uint256 amount) public onlyOwner {
         _mint(to, amount); 
-    }
+}
 ```
+The following functions extracts the balance of the account:
+```
+function getBalance() external view returns (uint256) {
+        return this.balanceOf(msg.sender);
+}
+```
+The folllowing function allows the transfer of tokens to another account:
+```
+function transferTokens(address _receiver, uint256 _value) external {
+        require(balanceOf(msg.sender) >= _value, "Insufficient amount of DGN token to perform a transfer!");
+        approve(msg.sender, _value);
+        transferFrom(msg.sender, _receiver, _value);
+}
+```
+The following function allows the burning of tokens:
+```
+function burnTokens(uint256 _value) external {
+        require(balanceOf(msg.sender) >= _value, "Insufficient amount of DGN token!");
+        _burn(msg.sender, _value);
+}
+```
+The following function to allow the addition of items to the item_collection:
+```
+function addItem(string memory _name, uint256 _cost) public onlyOwner {
+        items[itemCount] = item_collection(_name, _cost);
+        itemCount++;
+}
+```
+The following function allows the user to redeem items from the item_collection with tokens:
+```
+function redeemTokens(uint256 itemId) external {
+        require(itemId < itemCount, "Invalid item ID");
+        item_collection memory item = items[itemId];
+        require(balanceOf(msg.sender) >= item.cost, "Not enough DGN tokens to redeem the item");
+        _burn(msg.sender, item.cost);
+}
+```
+Overall, the program was specifically made to demonstrate how users can get, transfer, burn tokens and buy or redeem items with their acquired tokens.
 
 ## Getting Started
 
